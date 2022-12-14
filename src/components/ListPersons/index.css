@@ -1,0 +1,55 @@
+.persons {
+    padding-top: 100px;
+}
+
+.persons__title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.persons__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 23%;
+    margin-bottom: 50px;
+    margin: 0 7px 30px;
+    color: white;
+}
+.person__block-img {
+    position: relative;
+    margin-bottom: 15px;
+}
+.person__img {
+    width: 100%;
+    
+}
+.person__title {
+    font-size: 20px;
+}
+
+.person__hover {
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: .3s;
+}
+
+.person__characteristic {
+    position: absolute;
+    padding: 0 40px;
+    bottom: 40px;
+    left: 0;
+    font-size: 20px;
+}
+
+.person:hover .person__hover{
+    opacity: 1;
+}
